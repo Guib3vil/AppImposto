@@ -13,13 +13,18 @@
   </ion-item>
 
   <ion-item>
+    <ion-input [(ngModel)]="D" label="Valor do Dolar" labelPlacement="floating" placeholder="Digite o Valor do Dolar"></ion-input>
+  </ion-item>
+
+  <ion-item>
     <ion-input [(ngModel)]="R" label="Região" labelPlacement="floating" placeholder="Digite a Região da Entrega"></ion-input>
   </ion-item>
 
-
   <ion-button fill="clear" (click)="Calcular()">Calcular</ion-button><br>
 
-  <ion-label> Imposto Adicionado {{IA}}</ion-label><br>
-  <ion-label> Preço Final {{PF}}</ion-label><br>
-  <ion-label> Tempo de Entrega {{TD}} dias úteis</ion-label>
+  <ion-label>Imposto Adicionado: {{IA}} dolars</ion-label><br>
+  <ion-label>Imposto Adicionado em R$ {{IR}}</ion-label> <br>
+  <ion-label>Preço Final: {{PF}} em dolares</ion-label><br>
+  <ion-label>Preço final: R$ {{PFR}}</ion-label> <br>
+  <ion-label>Tempo de Entrega {{TD}} dias úteis</ion-label>
 </ion-content>
